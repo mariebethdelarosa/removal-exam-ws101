@@ -9,11 +9,11 @@
 
 #### File Structure
 
- plaintext
+ ```plaintext
  project/
  ├── index.html
  └── styles.css (optional)
- `
+ ```
 
 #### HTML Requirements (20 points)
 
