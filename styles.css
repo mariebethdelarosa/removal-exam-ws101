@@ -1,0 +1,131 @@
+:root {
+    --primary-color: #8b0000;
+    --accent-color: #b30000;
+    --bg-color: #0a0a0a;
+    --text-color: #f5f5f5;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 220px;
+    height: 100%;
+    background: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin: 12px 0;
+    padding: 6px;
+}
+
+nav a:hover {
+    background: var(--primary-color);
+}
+
+header {
+    margin-left: 240px;
+    height: 100vh;
+    background: linear-gradient(to right, black, var(--primary-color));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn {
+    padding: 12px 25px;
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    margin-left: 240px;
+    padding: 50px;
+}
+
+.card {
+    background: #111;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills-list li {
+    background: #1a1a1a;
+    padding: 8px 12px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #333;
+    background: #111;
+    color: white;
+}
+
+input:focus, textarea:focus {
+    outline: 2px solid var(--accent-color);
+}
+
+button {
+    padding: 10px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+}
+
+footer {
+    margin-left: 240px;
+    padding: 20px;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    nav {
+        position: static;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    header, section, footer {
+        margin-left: 0;
+    }
+
+    form {
+        width: 100%;
+    }
+}
